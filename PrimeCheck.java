@@ -32,7 +32,7 @@ public class PrimeCheck {
 			System.out.println("Please enter a number");
 			n = input.nextInt();
 			boolean prime = true; // I think this works
-			if (n == 0) prime = false; // 0 is not prime and 0/2 < 2 so I have to manually set it but that's ok
+			if (n < 3) prime = false; // It will print prime for 0 - 2 so I'll just manually set them to not prime
 			for (int i = 2; i <= (n/2); i++) {
 				if (n % i == 0)
 					prime = false;
